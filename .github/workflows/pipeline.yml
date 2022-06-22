@@ -13,6 +13,11 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 16
+      - name: Install Dependencies
       - run: npm ci
+      - name: Run Eslinter
+      - run: npm run lint
+      - name: Run Test
       - run: npm test
+      - name: Run Build
       - run: npm run build
