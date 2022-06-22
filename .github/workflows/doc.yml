@@ -13,7 +13,8 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 16
-      - run: npm ci
+      - run: npm install
+      - run: npm install -g npx
       - run: npm test
       - run: npm run build
       - uses: amondnet/vercel-action@v20 #deploy
