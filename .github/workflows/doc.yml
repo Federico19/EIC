@@ -1,5 +1,9 @@
 name: Entorno Integracion Continua
-on: push
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
   ci_to_master:
