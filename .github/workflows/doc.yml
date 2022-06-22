@@ -15,11 +15,6 @@ jobs:
           node-version: 16
       - run: npm ci
       - run: npm test
-
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
       - run: npm run build
       - uses: amondnet/vercel-action@v20 #deploy
         with:
