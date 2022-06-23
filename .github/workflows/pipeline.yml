@@ -21,5 +21,5 @@ jobs:
         run: npm test
       - name: Run Build
         run: npm run build
-      # - name: Config Deploy in Heroku
+      # - name: Config Delivery in Heroku
         
