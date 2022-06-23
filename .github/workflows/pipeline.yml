@@ -1,11 +1,11 @@
 name: Entorno Integracion Continua
 on:
-  # push:
-  #   branches:
-  #     - main
-  pull_request:
+  push:
     branches:
       - main
+  # pull_request:
+  #   branches:
+  #     - main
 
 jobs:
   ci_to_master:
