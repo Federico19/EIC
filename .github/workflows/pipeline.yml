@@ -14,7 +14,7 @@ jobs:
         with:
           node-version: 16
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
       - name: Run Eslinter
         run: npm run lint
       - name: Run Test
